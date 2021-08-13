@@ -78,3 +78,6 @@ print(
     max(100, 51, 14, key=mod_5),
     sep='\n'
 )
+
+
+print(round(338424, -3))
