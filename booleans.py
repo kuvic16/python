@@ -45,3 +45,27 @@ is_workday = False
 # Check what the function returns given the current values of the variables above
 actual = prepared_for_weather(have_umbrella, rain_level, have_hood, is_workday)
 print(actual)
+
+
+def new():
+    print("")
+    print("======================")
+
+
+print("====================")
+print(True ^ True)
+
+print("====================")
+print(bool(1))
+print(bool(0))
+
+print("====================")
+print(int(True))
+print(int(False))
+
+new()
+a = True
+b = False
+c = True
+
+print(a + b + c)
