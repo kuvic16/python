@@ -81,3 +81,21 @@ print(
 
 
 print(round(338424, -3))
+
+total_candies = 91
+print(total_candies % 3)
+
+
+x = -10
+y = 5
+
+smallest_abs = min(abs(x), abs(y))
+print(smallest_abs)
+
+
+def f(x):
+    y = abs(x)
+    return y
+
+
+print(f(5))
