@@ -69,3 +69,5 @@ b = False
 c = True
 
 print(a + b + c)
+
+# The player is dealt two face-up cards. The dealer is dealth one face-up card.
