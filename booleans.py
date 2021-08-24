@@ -71,3 +71,33 @@ c = True
 print(a + b + c)
 
 # The player is dealt two face-up cards. The dealer is dealth one face-up card.
+# 4 12 0 0
+# 8 14 0 0
+# 8 20 0 0
+# 8 12 0 0
+# 10 13 0 0
+# 9 16 0 0
+# 3 11 0 0
+# 11 13 0 0
+# 2 19 0 0
+# 7 14 0 0
+# 7 18 0 0
+# 9 20 0 0
+# 3 11 0 0
+# 1. The player is dealt two face-up cards. The dealer is dealt one face-up card.
+# 2. The player may ask to be dealt another card("hit") as many times as they wish.
+# if the sum of their cards exceeds 21, they lost the round immediately.
+
+
+def should_hit(dealer_total, player_total, player_low_aces, player_high_aces):
+    if player_total <= 11 and dealer_total > 0 and player_low_aces > 0:
+        return True
+    elif player_total <= 0 and dealer_total > 0 and player_high_aces == 1:
+        return True
+    elif player_total <= 14 and (dealer_total < 3 or dealer_total > 7):
+        return True
+    else:
+        return False
+
+
+print(should_hit(4, 12, 0, 0))
